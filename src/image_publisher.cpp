@@ -5,7 +5,7 @@
 
 int main(int argc, char** argv)
 {
-  ros::init(argc, argv, "image_publisher");
+  ros::init(argc, argv, "simple_image_publisher");
   ros::NodeHandle nh;
   image_transport::ImageTransport it(nh);
   image_transport::Publisher pub = it.advertise("static_image", 1);
